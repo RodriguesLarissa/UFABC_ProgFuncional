@@ -1,0 +1,52 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: f604b618f43408f13bba873a12650b8998c75cbc2bcc62a6cd4c4419585883fc
+
+name:           semana01
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/semana01#readme>
+homepage:       https://github.com/githubuser/semana01#readme
+bug-reports:    https://github.com/githubuser/semana01/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2021 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/semana01
+
+library
+  exposed-modules:
+      Exercicios
+  other-modules:
+      Paths_semana01
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
+
+test-suite semana01-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_semana01
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , semana01
+    , tasty
+    , tasty-hunit
+  default-language: Haskell2010
