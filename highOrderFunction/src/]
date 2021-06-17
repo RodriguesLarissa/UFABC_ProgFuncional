@@ -1,0 +1,12 @@
+module Main where
+
+soma :: Int -> Int -> Int 
+soma x y = x + y
+
+-- $> soma3 = soma 3
+--
+-- $> soma3 2
+
+main :: IO ()
+main = do
+  putStrLn "hello world"
