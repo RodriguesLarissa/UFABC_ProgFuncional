@@ -1,3 +1,9 @@
+module Cesar (shift, encode, crack, caracteresValidos) where
+import Data.Char
+
+caracteresValidos :: [Char]
+caracteresValidos = ' ' : ['a'..'z']
+
 let2int :: Char -> Int
 let2int n = ord n - ord 'a'
 
